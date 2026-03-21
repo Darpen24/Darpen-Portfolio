@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekte | Darpen Bhandari</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body class="text-zinc-100">
+  <div class="mx-auto max-w-5xl px-6 py-10">
+
+    <nav class="flex items-center justify-between">
+      <a href="./index.html" class="font-semibold tracking-tight hover:opacity-80 transition relative z-10">
+        Darpen Bhandari
+      </a>
+
+      <div class="flex items-center gap-6 text-sm">
+        <div class="flex gap-4">
+          <a class="hover:underline" href="./index.html" data-i18n="nav_home">Start</a>
+          <a class="hover:underline" href="./projects.html" data-i18n="nav_projects">Projekte</a>
+          <a class="hover:underline" href="./index.html#contact" data-i18n="nav_contact">Kontakt</a>
+        </div>
+
+        <div class="flex items-center gap-2 text-zinc-300">
+          <button id="lang-de" class="hover:underline font-medium" type="button">DE</button>
+          <span class="text-zinc-600">|</span>
+          <button id="lang-en" class="hover:underline" type="button">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="mt-10 text-3xl font-semibold" data-i18n="projects_title">Projekte</h1>
+    <p class="mt-2 text-zinc-300" data-i18n="projects_subtitle">Ausgewählte Arbeiten mit klarem Problem, Lösung und Nachweis.</p>
+
+    <div class="mt-8 grid gap-4 md:grid-cols-2">
+
+      <div class="card" id="stroke">
+        <div class="text-lg font-semibold" data-i18n="stroke_title">Stroke Risk Analysis Dashboard (Power BI)</div>
+
+        <p class="mt-3 text-zinc-300" data-i18n="stroke_desc">
+          Interaktives Power BI Dashboard zur Analyse von Schlaganfall Risiko Faktoren für 5.110 Patienten.
+        </p>
+
+        <img
+          src="assets/assets/images/Main-Dashboard.png"
+          alt="Stroke dashboard preview"
+          class="mt-4 rounded-2xl border border-white/10"
+          loading="lazy"
+        />
+
+        <div class="mt-4 flex flex-wrap gap-3 text-sm">
+          <a class="underline" href="https://github.com/Darpen24/Stroke-Risk" target="_blank" rel="noreferrer" data-i18n="stroke_github">GitHub</a>
+          <a class="underline" href="https://raw.githubusercontent.com/Darpen24/Stroke-Risk/main/Stroek_Risk_Analysis.pbix" download data-i18n="stroke_download">PBIX herunterladen</a>
+          <span class="text-zinc-500" data-i18n="stroke_note">Interaktives Embed braucht Power BI Service Zugriff</span>
+        </div>
+
+        <div class="mt-3 text-xs text-zinc-500" data-i18n="stroke_kpis">
+          KPIs: Stroke Rate Prozent, High Risk Prozent, Avg BMI, Avg Glucose. Visuals: Breakdown nach Age Group, BMI Category, Smoking Status und BMI vs Glucose Scatter.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="text-lg font-semibold" data-i18n="cvopt_title">CV Optimizer</div>
+        <p class="mt-2 text-zinc-300" data-i18n="cvopt_desc">Lokales GenAI Tool das CV Inhalte auf eine Jobbeschreibung zuschneidet mit einer LLM Pipeline.</p>
+        <div class="mt-4 flex gap-3 text-sm">
+          <a class="underline" href="https://github.com/Darpen24/CV-Optimizer" target="_blank" rel="noreferrer" data-i18n="cvopt_github">GitHub</a>
+          <span class="text-zinc-500" data-i18n="cvopt_note">Live Demo Link später</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="text-lg font-semibold" data-i18n="elec_title">Electricity Insights</div>
+        <p class="mt-2 text-zinc-300" data-i18n="elec_desc">Forecasting und Dashboarding Projekt mit Fokus auf Energieverbrauch Trends und Evaluation.</p>
+        <div class="mt-4 flex gap-3 text-sm">
+          <a class="underline" href="https://github.com/Darpen24/Electricity_insights" target="_blank" rel="noreferrer" data-i18n="elec_github">GitHub</a>
+          <span class="text-zinc-500" data-i18n="elec_note">Live Demo Link später</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="text-lg font-semibold" data-i18n="wine_title">Wine Quality Analysis</div>
+        <p class="mt-2 text-zinc-300" data-i18n="wine_desc">EDA und Feature Insights Projekt mit Cleaning, Visualisierung und Interpretation.</p>
+        <div class="mt-4 flex gap-3 text-sm">
+          <a class="underline" href="https://github.com/Darpen24/Wine_Quality_Analysis" target="_blank" rel="noreferrer" data-i18n="wine_github">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="text-lg font-semibold" data-i18n="ent_title">Enterprise Analytics Work</div>
+        <p class="mt-2 text-zinc-300" data-i18n="ent_desc">API Integrationen, Power BI Dashboards und Automatisierung über Enterprise Systeme hinweg.</p>
+        <div class="mt-4 text-sm text-zinc-500" data-i18n="ent_note">Details im CV und auf Anfrage</div>
+      </div>
+
+    </div>
+
+    <footer class="mt-10 text-xs text-zinc-500">
+      <span data-i18n="footer_back">Zurück zu</span> <a class="underline" href="./index.html" data-i18n="footer_home">Start</a>
+    </footer>
+  </div>
+
+  <script>
+    const translations = {
+      de: {
+        nav_home: "Start",
+        nav_projects: "Projekte",
+        nav_contact: "Kontakt",
+
+        projects_title: "Projekte",
+        projects_subtitle: "Ausgewählte Arbeiten mit klarem Problem, Lösung und Nachweis.",
+
+        stroke_title: "Stroke Risk Analysis Dashboard (Power BI)",
+        stroke_desc: "Interaktives Power BI Dashboard zur Analyse von Schlaganfall Risiko Faktoren für 5.110 Patienten.",
+        stroke_github: "GitHub",
+        stroke_download: "PBIX herunterladen",
+        stroke_note: "Interaktives Embed braucht Power BI Service Zugriff",
+        stroke_kpis: "KPIs: Stroke Rate Prozent, High Risk Prozent, Avg BMI, Avg Glucose. Visuals: Breakdown nach Age Group, BMI Category, Smoking Status und BMI vs Glucose Scatter.",
+
+        cvopt_title: "CV Optimizer",
+        cvopt_desc: "Lokales GenAI Tool das CV Inhalte auf eine Jobbeschreibung zuschneidet mit einer LLM Pipeline.",
+        cvopt_github: "GitHub",
+        cvopt_note: "Live Demo Link später",
+
+        elec_title: "Electricity Insights",
+        elec_desc: "Forecasting und Dashboarding Projekt mit Fokus auf Energieverbrauch Trends und Evaluation.",
+        elec_github: "GitHub",
+        elec_note: "Live Demo Link später",
+
+        wine_title: "Wine Quality Analysis",
+        wine_desc: "EDA und Feature Insights Projekt mit Cleaning, Visualisierung und Interpretation.",
+        wine_github: "GitHub",
+
+        ent_title: "Enterprise Analytics Work",
+        ent_desc: "API Integrationen, Power BI Dashboards und Automatisierung über Enterprise Systeme hinweg.",
+        ent_note: "Details im CV und auf Anfrage",
+
+        footer_back: "Zurück zu",
+        footer_home: "Start"
+      },
+
+      en: {
+        nav_home: "Home",
+        nav_projects: "Projects",
+        nav_contact: "Contact",
+
+        projects_title: "Projects",
+        projects_subtitle: "Selected work with clear problem, solution and proof.",
+
+        stroke_title: "Stroke Risk Analysis Dashboard (Power BI)",
+        stroke_desc: "Interactive Power BI dashboard analyzing stroke risk factors across 5,110 patients.",
+        stroke_github: "GitHub",
+        stroke_download: "Download PBIX",
+        stroke_note: "Interactive embed needs Power BI Service access",
+        stroke_kpis: "KPIs: Stroke Rate %, High Risk %, Avg BMI, Avg Glucose. Visuals: risk breakdown by age group, BMI category, smoking status and BMI vs glucose scatter.",
+
+        cvopt_title: "CV Optimizer",
+        cvopt_desc: "Local GenAI tool to tailor CV content to a job description using an LLM pipeline.",
+        cvopt_github: "GitHub",
+        cvopt_note: "Live demo link later",
+
+        elec_title: "Electricity Insights",
+        elec_desc: "Forecasting and dashboarding project focused on energy usage trends and evaluation.",
+        elec_github: "GitHub",
+        elec_note: "Live demo link later",
+
+        wine_title: "Wine Quality Analysis",
+        wine_desc: "EDA and feature insight project showing cleaning, visualization and interpretation.",
+        wine_github: "GitHub",
+
+        ent_title: "Enterprise Analytics Work",
+        ent_desc: "API integrations, Power BI dashboards and automation across enterprise systems.",
+        ent_note: "Details in CV and on request",
+
+        footer_back: "Back to",
+        footer_home: "Home"
+      }
+    };
+
+    function setLang(lang) {
+      const dict = translations[lang] || translations.de;
+
+      localStorage.setItem("lang", lang);
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) el.textContent = dict[key];
+      });
+
+      const deBtn = document.getElementById("lang-de");
+      const enBtn = document.getElementById("lang-en");
+      if (deBtn && enBtn) {
+        if (lang === "de") {
+          deBtn.classList.add("font-medium");
+          enBtn.classList.remove("font-medium");
+        } else {
+          enBtn.classList.add("font-medium");
+          deBtn.classList.remove("font-medium");
+        }
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const saved = localStorage.getItem("lang") || "de";
+      setLang(saved);
+
+      document.getElementById("lang-de").addEventListener("click", () => setLang("de"));
+      document.getElementById("lang-en").addEventListener("click", () => setLang("en"));
+    });
+  </script>
+</body>
+</html>
