@@ -1,359 +1,198 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Darpen Bhandari | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
-
-<body class="text-zinc-100">
-  <div class="mx-auto max-w-5xl px-6 py-10">
-
-    <nav class="flex items-center justify-between">
-      <a href="index.html" class="font-semibold tracking-tight hover:opacity-80 transition">
-        Darpen Bhandari
-      </a>
-
-      <div class="flex items-center gap-6 text-sm">
-        <div class="flex gap-4">
-          <a class="hover:underline" href="index.html" data-i18n="nav_home">Start</a>
-          <a class="hover:underline" href="projects.html" data-i18n="nav_projects">Projekte</a>
-          <a class="hover:underline" href="#contact" data-i18n="nav_contact">Kontakt</a>
-        </div>
-
-        <div class="flex items-center gap-2 text-zinc-300">
-          <button id="lang-de" class="hover:underline font-medium" type="button">DE</button>
-          <span class="text-zinc-600">|</span>
-          <button id="lang-en" class="hover:underline" type="button">EN</button>
-        </div>
-      </div>
-    </nav>
-
-    <header class="mt-12 grid gap-10 md:grid-cols-2">
-      <div>
-        <h1 class="text-4xl font-semibold tracking-tight" data-i18n="hero_title">Data Analyst</h1>
-
-        <p class="mt-3 text-zinc-300" data-i18n="hero_stack">
-          Python, SQL, Power BI (DAX), REST APIs, Data Pipelines, Data Quality
-        </p>
-
-        <p class="mt-6 text-zinc-200 leading-relaxed" data-i18n="hero_about">
-          Ich bin Data Analyst mit 4+ Jahren Erfahrung in Power BI, SQL und Python. Ich baue REST API Integrationen und Reporting Pipelines, damit Daten aus Enterprise Tools sauber im Dashboard landen. Mein Fokus ist KPI Definition, Datenqualität, Automatisierung und Insights, die Stakeholder direkt nutzen können.
-        </p>
-
-        <div class="mt-6 grid gap-3">
-          <div class="card text-sm">
-            <div class="font-medium" data-i18n="value_title">Was du von mir bekommst</div>
-            <ul class="mt-2 list-disc pl-5 text-zinc-300">
-              <li data-i18n="value_1">Klar definierte KPIs und saubere Zahlen, nicht nur schöne Visuals</li>
-              <li data-i18n="value_2">Automatisierung und Datenpipelines, die man warten kann</li>
-              <li data-i18n="value_3">Stakeholder Kommunikation, die Anforderungen in messbare Ergebnisse übersetzt</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a class="btn" href="projects.html" data-i18n="btn_view_projects">Projekte ansehen</a>
-          <a class="btn-outline" href="https://github.com/Darpen24" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn-outline" href="https://www.linkedin.com/in/darpen-bhandari" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
-
-        <div class="mt-10 grid grid-cols-2 gap-3 text-sm">
-          <div class="card">
-            <div class="text-zinc-400" data-i18n="exp_current_label">Aktuell</div>
-            <div class="mt-1 font-medium">Universitätsklinikum Heidelberg</div>
-            <div class="text-zinc-300" data-i18n="exp_current_role">Student Assistant, Data und System Analytics</div>
-            <ul class="mt-3 list-disc pl-5 text-xs text-zinc-300">
-              <li data-i18n="exp_current_b1">REST API Pipelines aufgebaut, Datenabweichungen um 20% reduziert</li>
-              <li data-i18n="exp_current_b2">Power BI KPI Dashboards erstellt, manuelles Reporting um 25% reduziert</li>
-              <li data-i18n="exp_current_b3">Root Cause Analyse in Matrix42 und SAP Fiori, Tracking Gaps geschlossen</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <div class="text-zinc-400" data-i18n="exp_past_label">Zuvor</div>
-            <div class="mt-1 font-medium">Hexaware Technologies</div>
-            <div class="text-zinc-300" data-i18n="exp_past_role">Senior Software Engineer, Team Lead</div>
-            <ul class="mt-3 list-disc pl-5 text-xs text-zinc-300">
-              <li data-i18n="exp_past_b1">Team von 6 geleitet, SQL und Power BI Lösungen für Jennison Associates geliefert</li>
-              <li data-i18n="exp_past_b2">Portfolio Reporting um 15% verbessert durch Dashboarding und KPI Design</li>
-              <li data-i18n="exp_past_b3">Python und SQL Pipelines, Datenverarbeitung um 30% effizienter, audit ready Outputs</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="card p-6">
-        <div class="flex items-center gap-4">
-          <img
-            src="assets/Darpen-Photo.jpeg"
-            alt="Darpen Bhandari"
-            class="h-20 w-20 rounded-2xl object-cover border border-white/10"
-          />
-          <div>
-            <div class="text-lg font-semibold" data-i18n="skills_title">Kernskills</div>
-            <div class="text-sm text-zinc-300" data-i18n="skills_location">Standort Mannheim, Deutschland</div>
-          </div>
-        </div>
-
-        <div class="mt-4 flex flex-wrap gap-2 text-sm">
-          <span class="pill">Python</span>
-          <span class="pill">SQL</span>
-          <span class="pill">Power BI</span>
-          <span class="pill">DAX</span>
-          <span class="pill">REST APIs</span>
-          <span class="pill">ETL/ELT</span>
-          <span class="pill" data-i18n="pill_pipelines">Datenpipelines</span>
-          <span class="pill" data-i18n="pill_quality">Data Quality</span>
-          <span class="pill">SAP Fiori</span>
-          <span class="pill">Git</span>
-        </div>
-
-        <h2 class="mt-8 text-lg font-semibold" data-i18n="cert_title">Zertifikate</h2>
-        <ul class="mt-3 list-disc pl-5 text-zinc-200">
-          <li data-i18n="cert_1">Microsoft Certified Azure Fundamentals</li>
-          <li data-i18n="cert_2">Python für Machine Learning</li>
-          <li data-i18n="cert_3">Grundlagen Deep Learning</li>
-          <li data-i18n="cert_4">SAS Certified Specialist Visual Business Analytics</li>
+<body>
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">darpen_portfolio</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="projects.html">All Projects</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="mt-8">
-          <div class="text-lg font-semibold" data-i18n="featured_title">Projekt Highlight</div>
-          <p class="mt-2 text-sm text-zinc-300" data-i18n="featured_desc">
-            Power BI Dashboard mit 5.110 Patientendaten, KPI Karten, Filter und Breakdown nach Gruppen.
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="terminal-line">$ initialize_portfolio()</p>
+          <h1>Darpen<br><span>Bhandari</span></h1>
+          <p class="role-line">role() = "<span id="typing-text"></span>"</p>
+          <p class="hero-desc">
+            I build data pipelines, reporting workflows and dashboards that turn raw operational data into useful decisions.
           </p>
 
-          <a href="projects.html#stroke" class="mt-4 block overflow-hidden rounded-2xl border border-white/10 hover:opacity-95 transition">
-            <img
-              src="assets/assets/images/Main-Dashboard.png"
-              alt="Stroke Risk Analysis Dashboard screenshot"
-              class="w-full h-auto"
-              loading="lazy"
-            />
-          </a>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a href="assets/resume.pdf" class="btn btn-secondary" target="_blank">Resume</a>
+          </div>
 
-          <div class="mt-3 flex flex-wrap gap-3 text-sm">
-            <a class="underline" href="projects.html#stroke" data-i18n="featured_case">Details ansehen</a>
-            <a class="underline" href="https://github.com/Darpen24/Stroke-Risk" target="_blank" rel="noreferrer" data-i18n="featured_github">GitHub</a>
+          <div class="stats">
+            <div class="stat-card">
+              <h3>4.9+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-card">
+              <h3>22</h3>
+              <p>Applications Supported</p>
+            </div>
+            <div class="stat-card">
+              <h3>15%</h3>
+              <p>Reporting Effort Reduced</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <img src="assets/profile.jpg" alt="Darpen Bhandari" class="profile-img" />
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <section class="mt-14">
-      <h2 class="text-2xl font-semibold" data-i18n="what_title">Was ich mache</h2>
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-tag">// ABOUT</p>
+        <h2>Who I am</h2>
+        <p class="section-text">
+          I am a Data Engineer and Analytics professional with experience in ETL and ELT pipelines, Azure-based workflows,
+          SQL, Power BI and operational reporting. I focus on building structured, reliable and decision-ready data solutions.
+        </p>
+      </div>
+    </section>
 
-      <div class="mt-4 grid gap-4 md:grid-cols-2 text-sm">
-        <div class="card">
-          <div class="font-medium" data-i18n="w1_title">Analytics und Dashboards</div>
-          <p class="mt-2 text-zinc-300" data-i18n="w1_desc">
-            KPI Frameworks definieren, Power BI Dashboards (DAX, Power Query) bauen und Ergebnisse so erklären, dass Teams Entscheidungen treffen können.
-          </p>
+    <section id="experience" class="section alt-bg">
+      <div class="container">
+        <p class="section-tag">// EXPERIENCE</p>
+        <h2>Professional Experience</h2>
+
+        <div class="timeline-card">
+          <h3>Student Assistant - Data and System Analytics</h3>
+          <p class="subtext">Universitätsklinikum Heidelberg | Heidelberg, Germany</p>
+          <ul>
+            <li>Built ETL and ELT workflows and dashboarding solutions for operational application data.</li>
+            <li>Worked with Python, SQL, Azure Data Factory, Azure Storage and Power BI.</li>
+            <li>Improved reporting visibility and supported reduction in manual reporting effort.</li>
+          </ul>
         </div>
 
-        <div class="card">
-          <div class="font-medium" data-i18n="w2_title">Datenautomatisierung und Integrationen</div>
-          <p class="mt-2 text-zinc-300" data-i18n="w2_desc">
-            REST API Integrationen und Python SQL Workflows für Reporting. Fokus auf Datenvalidierung, weniger manuelle Arbeit und wartbare Pipelines.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="font-medium" data-i18n="w3_title">Forecasting und Modellbewertung</div>
-          <p class="mt-2 text-zinc-300" data-i18n="w3_desc">
-            Forecasting Projekte um Trends sichtbar zu machen. Modelle vergleichen mit RMSE, MAE und R² und Outputs klar dokumentieren.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="font-medium" data-i18n="w4_title">Stakeholder Kommunikation</div>
-          <p class="mt-2 text-zinc-300" data-i18n="w4_desc">
-            Anforderungen strukturieren, KPIs sauber definieren, Annahmen dokumentieren und Abstimmung zwischen Tech und Business übernehmen.
-          </p>
+        <div class="timeline-card">
+          <h3>Senior Software Engineer</h3>
+          <p class="subtext">Hexaware Technologies Pvt Ltd. | Navi Mumbai, India</p>
+          <ul>
+            <li>Led data delivery for financial applications using Azure Data Factory, Azure SQL and Data Lake.</li>
+            <li>Built automated ETL pipelines with validation checks and CI/CD support.</li>
+            <li>Improved reporting reliability and data accessibility for business users.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="mt-14 card p-6">
-      <h2 class="text-2xl font-semibold" data-i18n="contact_title">Kontakt</h2>
-      <p class="mt-3 text-zinc-300">
-        <span data-i18n="contact_email_label">E Mail</span>:
-        <a class="underline" href="mailto:darpen.bhandari@gmail.com">darpen.bhandari@gmail.com</a>
-      </p>
-      <p class="mt-1 text-zinc-300">
-        <span data-i18n="contact_phone_label">Telefon</span>:
-        <a class="underline" href="tel:+4915203864746">+49 1520 3864746</a>
-      </p>
-      <p class="mt-1 text-zinc-300">
-        <span data-i18n="contact_location_label">Ort</span>:
-        <span data-i18n="contact_location_value">Mannheim, Deutschland</span>
-      </p>
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-tag">// PROJECTS</p>
+            <h2>Featured Projects</h2>
+          </div>
+          <a href="projects.html" class="text-link">See all</a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="assets/dashboard.png" alt="Dashboard project" class="project-img" />
+            <div class="project-content">
+              <p class="project-label">Power BI • Dashboarding</p>
+              <h3>Interactive Dashboard Project</h3>
+              <p>
+                A reporting-focused dashboard project showing KPI visibility, structured visuals and business-friendly insights.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-placeholder">Project Image Coming Later</div>
+            <div class="project-content">
+              <p class="project-label">Python • Forecasting</p>
+              <h3>Smart Electricity and Energy Optimizer</h3>
+              <p>
+                Energy analytics, forecasting, anomaly detection and LLM-based explanations for smarter usage decisions.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-placeholder">Project Image Coming Later</div>
+            <div class="project-content">
+              <p class="project-label">Streamlit • Environmental Analytics</p>
+              <h3>Lake Monitoring and Quality Analysis</h3>
+              <p>
+                Dashboarding and data workflows for lake levels, water quality indicators and environmental KPI tracking.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer class="mt-10 text-xs text-zinc-500" data-i18n="footer">
-      Erstellt von Darpen Bhandari
-    </footer>
+    <section id="skills" class="section alt-bg">
+      <div class="container">
+        <p class="section-tag">// SKILLS</p>
+        <h2>Core Skills</h2>
 
-  </div>
+        <div class="skills-wrap">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Power BI</span>
+          <span>Azure Data Factory</span>
+          <span>Azure SQL</span>
+          <span>Azure Storage</span>
+          <span>ETL / ELT</span>
+          <span>Dashboarding</span>
+          <span>Data Validation</span>
+          <span>CI/CD</span>
+          <span>REST APIs</span>
+          <span>Tableau</span>
+        </div>
+      </div>
+    </section>
 
-  <script>
-    const i18n = {
-      de: {
-        nav_home: "Start",
-        nav_projects: "Projekte",
-        nav_contact: "Kontakt",
+    <section id="contact" class="section">
+      <div class="container contact-box">
+        <p class="section-tag">// CONTACT</p>
+        <h2>Get in touch</h2>
+        <p class="section-text">
+          Looking for opportunities in Data Engineering, Analytics, BI and Reporting.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:darpen.bhandari@gmail.com" class="btn btn-primary">Email</a>
+          <a href="https://github.com/Darpen24" target="_blank" class="btn btn-secondary">GitHub</a>
+          <a href="https://www.linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        hero_title: "Data Analyst",
-        hero_stack: "Python, SQL, Power BI (DAX), REST APIs, Data Pipelines, Data Quality",
-        hero_about: "Ich bin Data Analyst mit 4+ Jahren Erfahrung in Power BI, SQL und Python. Ich baue REST API Integrationen und Reporting Pipelines, damit Daten aus Enterprise Tools sauber im Dashboard landen. Mein Fokus ist KPI Definition, Datenqualität, Automatisierung und Insights, die Stakeholder direkt nutzen können.",
-        btn_view_projects: "Projekte ansehen",
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Darpen Bhandari</p>
+    </div>
+  </footer>
 
-        value_title: "Was du von mir bekommst",
-        value_1: "Klar definierte KPIs und saubere Zahlen, nicht nur schöne Visuals",
-        value_2: "Automatisierung und Datenpipelines, die man warten kann",
-        value_3: "Stakeholder Kommunikation, die Anforderungen in messbare Ergebnisse übersetzt",
-
-        exp_current_label: "Aktuell",
-        exp_current_role: "Student Assistant, Data und System Analytics",
-        exp_current_b1: "REST API Pipelines aufgebaut, Datenabweichungen um 20% reduziert",
-        exp_current_b2: "Power BI KPI Dashboards erstellt, manuelles Reporting um 25% reduziert",
-        exp_current_b3: "Root Cause Analyse in Matrix42 und SAP Fiori, Tracking Gaps geschlossen",
-
-        exp_past_label: "Zuvor",
-        exp_past_role: "Senior Software Engineer, Team Lead",
-        exp_past_b1: "Team von 6 geleitet, SQL und Power BI Lösungen für Jennison Associates geliefert",
-        exp_past_b2: "Portfolio Reporting um 15% verbessert durch Dashboarding und KPI Design",
-        exp_past_b3: "Python und SQL Pipelines, Datenverarbeitung um 30% effizienter, audit ready Outputs",
-
-        skills_title: "Kernskills",
-        skills_location: "Standort Mannheim, Deutschland",
-        pill_pipelines: "Datenpipelines",
-        pill_quality: "Data Quality",
-
-        cert_title: "Zertifikate",
-        cert_1: "Microsoft Certified Azure Fundamentals",
-        cert_2: "Python für Machine Learning",
-        cert_3: "Grundlagen Deep Learning",
-        cert_4: "SAS Certified Specialist Visual Business Analytics",
-
-        featured_title: "Projekt Highlight",
-        featured_desc: "Power BI Dashboard mit 5.110 Patientendaten, KPI Karten, Filter und Breakdown nach Gruppen.",
-        featured_case: "Details ansehen",
-        featured_github: "GitHub",
-
-        what_title: "Was ich mache",
-        w1_title: "Analytics und Dashboards",
-        w1_desc: "KPI Frameworks definieren, Power BI Dashboards (DAX, Power Query) bauen und Ergebnisse so erklären, dass Teams Entscheidungen treffen können.",
-        w2_title: "Datenautomatisierung und Integrationen",
-        w2_desc: "REST API Integrationen und Python SQL Workflows für Reporting. Fokus auf Datenvalidierung, weniger manuelle Arbeit und wartbare Pipelines.",
-        w3_title: "Forecasting und Modellbewertung",
-        w3_desc: "Forecasting Projekte um Trends sichtbar zu machen. Modelle vergleichen mit RMSE, MAE und R² und Outputs klar dokumentieren.",
-        w4_title: "Stakeholder Kommunikation",
-        w4_desc: "Anforderungen strukturieren, KPIs sauber definieren, Annahmen dokumentieren und Abstimmung zwischen Tech und Business übernehmen.",
-
-        contact_title: "Kontakt",
-        contact_email_label: "E Mail",
-        contact_phone_label: "Telefon",
-        contact_location_label: "Ort",
-        contact_location_value: "Mannheim, Deutschland",
-
-        footer: "Erstellt von Darpen Bhandari"
-      },
-
-      en: {
-        nav_home: "Home",
-        nav_projects: "Projects",
-        nav_contact: "Contact",
-
-        hero_title: "Data Analyst",
-        hero_stack: "Python, SQL, Power BI (DAX), REST APIs, Data Pipelines, Data Quality",
-        hero_about: "I am a Data Analyst with 4+ years of experience in Power BI, SQL and Python. I build REST API integrations and reporting pipelines so enterprise data lands cleanly in dashboards. My focus is KPI definition, data quality, automation and insights stakeholders can act on.",
-        btn_view_projects: "View Projects",
-
-        value_title: "What you get from me",
-        value_1: "Clear KPI definitions and reliable numbers, not just good looking visuals",
-        value_2: "Automation and data pipelines that are maintainable",
-        value_3: "Stakeholder communication that turns requirements into measurable outcomes",
-
-        exp_current_label: "Current",
-        exp_current_role: "Student Assistant, Data and System Analytics",
-        exp_current_b1: "Built REST API pipelines, reduced data discrepancies by 20%",
-        exp_current_b2: "Delivered KPI based Power BI dashboards, reduced manual reporting by 25%",
-        exp_current_b3: "Root cause analysis in Matrix42 and SAP Fiori, closed tracking gaps",
-
-        exp_past_label: "Past",
-        exp_past_role: "Senior Software Engineer, Team Lead",
-        exp_past_b1: "Led a team of 6, delivered SQL and Power BI analytics for Jennison Associates",
-        exp_past_b2: "Improved portfolio reporting by 15% through dashboards and KPI design",
-        exp_past_b3: "Built Python and SQL pipelines, improved processing efficiency by 30% with audit ready outputs",
-
-        skills_title: "Core Skills",
-        skills_location: "Based in Mannheim, Germany",
-        pill_pipelines: "Data Pipelines",
-        pill_quality: "Data Quality",
-
-        cert_title: "Certifications",
-        cert_1: "Microsoft Certified Azure Fundamentals",
-        cert_2: "Python for Machine Learning",
-        cert_3: "Fundamentals of Deep Learning",
-        cert_4: "SAS Certified Specialist Visual Business Analytics",
-
-        featured_title: "Featured project",
-        featured_desc: "Power BI dashboard using 5,110 patient records with KPI cards, filters and cohort breakdowns.",
-        featured_case: "View details",
-        featured_github: "GitHub",
-
-        what_title: "What I do",
-        w1_title: "Analytics and Dashboards",
-        w1_desc: "Define KPI frameworks, build Power BI dashboards (DAX, Power Query) and explain insights in a way that teams can act on.",
-        w2_title: "Data Automation and Integrations",
-        w2_desc: "REST API integrations and Python SQL workflows for reporting with a focus on validation, less manual work and maintainable pipelines.",
-        w3_title: "Forecasting and Model Evaluation",
-        w3_desc: "Forecasting projects to spot trends. Compare models using RMSE, MAE and R² and document outputs clearly.",
-        w4_title: "Stakeholder Communication",
-        w4_desc: "Structure requirements, define KPIs properly, document assumptions and align outputs across tech and business.",
-
-        contact_title: "Contact",
-        contact_email_label: "Email",
-        contact_phone_label: "Phone",
-        contact_location_label: "Location",
-        contact_location_value: "Mannheim, Germany",
-
-        footer: "Built by Darpen Bhandari"
-      }
-    };
-
-    function applyLanguage(lang) {
-      const dict = i18n[lang] || i18n.de;
-
-      document.documentElement.lang = lang;
-      localStorage.setItem("lang", lang);
-
-      document.querySelectorAll("[data-i18n]").forEach((el) => {
-        const key = el.getAttribute("data-i18n");
-        if (dict[key]) el.textContent = dict[key];
-      });
-
-      const deBtn = document.getElementById("lang-de");
-      const enBtn = document.getElementById("lang-en");
-      if (deBtn && enBtn) {
-        if (lang === "de") {
-          deBtn.classList.add("font-medium");
-          enBtn.classList.remove("font-medium");
-        } else {
-          enBtn.classList.add("font-medium");
-          deBtn.classList.remove("font-medium");
-        }
-      }
-    }
-
-    document.getElementById("lang-de").addEventListener("click", () => applyLanguage("de"));
-    document.getElementById("lang-en").addEventListener("click", () => applyLanguage("en"));
-
-    const saved = localStorage.getItem("lang") || "de";
-    applyLanguage(saved);
-  </script>
+  <script src="assets/main.js"></script>
 </body>
 </html>
