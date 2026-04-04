@@ -24,13 +24,15 @@ let typingTimeout;
 function updateLanguage(lang) {
   currentLang = lang;
   localStorage.setItem("portfolioLang", lang);
+  document.documentElement.lang = lang;
 
   const elements = document.querySelectorAll("[data-en][data-de]");
   elements.forEach((el) => {
-    el.textContent = el.getAttribute(`data-${lang}`);
+    const newText = el.getAttribute(`data-${lang}`);
+    if (newText !== null) {
+      el.textContent = newText;
+    }
   });
-
-  document.documentElement.lang = lang;
 
   const enBtn = document.getElementById("lang-en");
   const deBtn = document.getElementById("lang-de");
