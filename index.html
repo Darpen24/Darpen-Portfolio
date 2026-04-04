@@ -10,14 +10,22 @@
   <header class="navbar">
     <div class="container nav-wrap">
       <a href="index.html" class="logo">Darpen Bhandari</a>
-      <nav>
+
+      <nav class="nav-right">
+        <div class="lang-toggle">
+          <button id="lang-en" class="lang-btn active">EN</button>
+          <span>|</span>
+          <button id="lang-de" class="lang-btn">DE</button>
+        </div>
+
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="projects.html">All Projects</a></li>
+          <li><a href="#about" data-en="About" data-de="Über mich">About</a></li>
+          <li><a href="#experience" data-en="Experience" data-de="Erfahrung">Experience</a></li>
+          <li><a href="#projects" data-en="Projects" data-de="Projekte">Projects</a></li>
+          <li><a href="#skills" data-en="Skills" data-de="Fähigkeiten">Skills</a></li>
+          <li><a href="#strengths" data-en="Value" data-de="Mehrwert">Value</a></li>
+          <li><a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
+          <li><a href="projects.html" data-en="All Projects" data-de="Alle Projekte">All Projects</a></li>
         </ul>
       </nav>
     </div>
@@ -27,31 +35,35 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="terminal-line">Data Engineer • Analytics • BI</p>
+          <p class="terminal-line" data-en="Data Engineer • Analytics • BI" data-de="Data Engineer • Analytics • BI">Data Engineer • Analytics • BI</p>
           <h1>Darpen<br><span>Bhandari</span></h1>
           <p class="role-line"><span id="typing-text"></span></p>
-          <p class="hero-desc">
+          <p
+            class="hero-desc"
+            data-en="Data Engineer with 4.9 years of experience building ETL and ELT pipelines, scalable data workflows and decision-ready analytics solutions using Python, SQL, Azure, BigQuery, Spark and Power BI."
+            data-de="Data Engineer mit 4,9 Jahren Erfahrung im Aufbau von ETL- und ELT-Pipelines, skalierbaren Datenworkflows und entscheidungsrelevanten Analytics-Lösungen mit Python, SQL, Azure, BigQuery, Spark und Power BI."
+          >
             Data Engineer with 4.9 years of experience building ETL and ELT pipelines, scalable data workflows and decision-ready analytics solutions using Python, SQL, Azure, BigQuery, Spark and Power BI.
           </p>
 
           <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
-            <a href="./assets/Darpen-CV.pdf" class="btn btn-secondary" target="_blank">Resume</a>
+            <a href="#projects" class="btn btn-primary" data-en="View Projects" data-de="Projekte ansehen">View Projects</a>
+            <a href="#contact" class="btn btn-secondary" data-en="Contact Me" data-de="Kontakt">Contact Me</a>
+            <a href="./assets/Darpen-CV.pdf" class="btn btn-secondary" target="_blank" data-en="Resume" data-de="Lebenslauf">Resume</a>
           </div>
 
           <div class="stats">
             <div class="stat-card">
               <h3>4.9+</h3>
-              <p>Years Experience</p>
+              <p data-en="Years Experience" data-de="Jahre Erfahrung">Years Experience</p>
             </div>
             <div class="stat-card">
               <h3>22</h3>
-              <p>Applications Supported</p>
+              <p data-en="Applications Supported" data-de="Anwendungen unterstützt">Applications Supported</p>
             </div>
             <div class="stat-card">
               <h3>15%</h3>
-              <p>Reporting Effort Reduced</p>
+              <p data-en="Reporting Effort Reduced" data-de="Weniger Reporting-Aufwand">Reporting Effort Reduced</p>
             </div>
           </div>
         </div>
@@ -67,8 +79,12 @@
     <section id="about" class="section">
       <div class="container">
         <p class="section-tag">// ABOUT</p>
-        <h2>Who I Am</h2>
-        <p class="section-text">
+        <h2 data-en="Who I Am" data-de="Wer ich bin">Who I Am</h2>
+        <p
+          class="section-text"
+          data-en="I am a Data Engineer with experience across healthcare, financial services and applied data science projects. I build ETL and ELT pipelines, automate reporting workflows and develop reliable analytics solutions that help stakeholders make better decisions. My work combines Python, SQL, Azure, BigQuery, Spark, dbt and Power BI to turn complex raw data into structured, scalable and business-ready outputs."
+          data-de="Ich bin Data Engineer mit Erfahrung in Healthcare, Financial Services und angewandten Data-Science-Projekten. Ich entwickle ETL- und ELT-Pipelines, automatisiere Reporting-Workflows und baue verlässliche Analytics-Lösungen, die Stakeholdern bessere Entscheidungen ermöglichen. Dabei nutze ich Python, SQL, Azure, BigQuery, Spark, dbt und Power BI, um komplexe Rohdaten in strukturierte, skalierbare und businessrelevante Ergebnisse zu verwandeln."
+        >
           I am a Data Engineer with experience across healthcare, financial services and applied data science projects. I build ETL and ELT pipelines, automate reporting workflows and develop reliable analytics solutions that help stakeholders make better decisions. My work combines Python, SQL, Azure, BigQuery, Spark, dbt and Power BI to turn complex raw data into structured, scalable and business-ready outputs.
         </p>
       </div>
@@ -77,16 +93,36 @@
     <section id="experience" class="section alt-bg">
       <div class="container">
         <p class="section-tag">// EXPERIENCE</p>
-        <h2>Professional Experience</h2>
+        <h2 data-en="Professional Experience" data-de="Berufserfahrung">Professional Experience</h2>
 
         <div class="timeline-card">
           <h3>Student Assistant - Data and System Analytics</h3>
           <p class="subtext">Universitätsklinikum Heidelberg | Heidelberg, Germany</p>
           <ul>
-            <li>Built ETL and ELT workflows and dashboarding solutions for operational application data using Python, SQL, Azure Data Factory, Azure Storage and Power BI.</li>
-            <li>Improved reporting visibility across IT services and supported a 15 percent reduction in manual reporting effort through structured workflows and dashboards.</li>
-            <li>Designed incident analytics dashboards to track open versus resolved cases, recurring service issues and application demand trends.</li>
-            <li>Supported better SLA monitoring and follow up on support requests by turning operational data into decision-ready insights.</li>
+            <li
+              data-en="Built ETL and ELT workflows and dashboarding solutions for operational application data using Python, SQL, Azure Data Factory, Azure Storage and Power BI."
+              data-de="Entwicklung von ETL- und ELT-Workflows sowie Dashboard-Lösungen für operative Anwendungsdaten mit Python, SQL, Azure Data Factory, Azure Storage und Power BI."
+            >
+              Built ETL and ELT workflows and dashboarding solutions for operational application data using Python, SQL, Azure Data Factory, Azure Storage and Power BI.
+            </li>
+            <li
+              data-en="Improved reporting visibility across IT services and supported a 15 percent reduction in manual reporting effort through structured workflows and dashboards."
+              data-de="Verbesserung der Reporting-Transparenz über IT-Services hinweg und Unterstützung einer Reduktion des manuellen Reporting-Aufwands um 15 Prozent durch strukturierte Workflows und Dashboards."
+            >
+              Improved reporting visibility across IT services and supported a 15 percent reduction in manual reporting effort through structured workflows and dashboards.
+            </li>
+            <li
+              data-en="Designed incident analytics dashboards to track open versus resolved cases, recurring service issues and application demand trends."
+              data-de="Konzeption von Incident-Analytics-Dashboards zur Verfolgung offener und gelöster Fälle, wiederkehrender Serviceprobleme und Nutzungstrends."
+            >
+              Designed incident analytics dashboards to track open versus resolved cases, recurring service issues and application demand trends.
+            </li>
+            <li
+              data-en="Supported better SLA monitoring and follow up on support requests by turning operational data into decision-ready insights."
+              data-de="Unterstützung eines besseren SLA-Monitorings und Follow-ups bei Supportanfragen durch die Umwandlung operativer Daten in entscheidungsrelevante Erkenntnisse."
+            >
+              Supported better SLA monitoring and follow up on support requests by turning operational data into decision-ready insights.
+            </li>
           </ul>
         </div>
 
@@ -94,10 +130,30 @@
           <h3>Senior Software Engineer</h3>
           <p class="subtext">Hexaware Technologies Pvt Ltd. | Navi Mumbai, India</p>
           <ul>
-            <li>Led data delivery for 22 financial applications by building automated ETL pipelines using Azure Data Factory, Azure SQL, Azure Storage and Data Lake.</li>
-            <li>Implemented data validation checks and CI/CD-supported workflows to improve data accessibility and reduce manual effort by 10 percent.</li>
-            <li>Designed scalable transformation logic and reporting layers for financial application data across Azure-based storage systems.</li>
-            <li>Improved dashboard delivery and business visibility, supporting a 5 percent uplift in revenue-driven decision outcomes across US operations.</li>
+            <li
+              data-en="Led data delivery for 22 financial applications by building automated ETL pipelines using Azure Data Factory, Azure SQL, Azure Storage and Data Lake."
+              data-de="Verantwortung für die Datenbereitstellung von 22 Finanzanwendungen durch den Aufbau automatisierter ETL-Pipelines mit Azure Data Factory, Azure SQL, Azure Storage und Data Lake."
+            >
+              Led data delivery for 22 financial applications by building automated ETL pipelines using Azure Data Factory, Azure SQL, Azure Storage and Data Lake.
+            </li>
+            <li
+              data-en="Implemented data validation checks and CI/CD-supported workflows to improve data accessibility and reduce manual effort by 10 percent."
+              data-de="Implementierung von Datenvalidierungen und CI/CD-gestützten Workflows zur Verbesserung der Datenverfügbarkeit und Reduktion des manuellen Aufwands um 10 Prozent."
+            >
+              Implemented data validation checks and CI/CD-supported workflows to improve data accessibility and reduce manual effort by 10 percent.
+            </li>
+            <li
+              data-en="Designed scalable transformation logic and reporting layers for financial application data across Azure-based storage systems."
+              data-de="Entwicklung skalierbarer Transformationslogiken und Reporting-Schichten für Finanzanwendungsdaten auf Azure-basierten Speichersystemen."
+            >
+              Designed scalable transformation logic and reporting layers for financial application data across Azure-based storage systems.
+            </li>
+            <li
+              data-en="Improved dashboard delivery and business visibility, supporting a 5 percent uplift in revenue-driven decision outcomes across US operations."
+              data-de="Verbesserung der Dashboard-Bereitstellung und Business-Transparenz mit Unterstützung eines 5-prozentigen Anstiegs umsatzbezogener Entscheidungsresultate im US-Geschäft."
+            >
+              Improved dashboard delivery and business visibility, supporting a 5 percent uplift in revenue-driven decision outcomes across US operations.
+            </li>
           </ul>
         </div>
       </div>
@@ -108,9 +164,9 @@
         <div class="section-head">
           <div>
             <p class="section-tag">// PROJECTS</p>
-            <h2>Featured Projects</h2>
+            <h2 data-en="Featured Projects" data-de="Ausgewählte Projekte">Featured Projects</h2>
           </div>
-          <a href="projects.html" class="text-link">See all</a>
+          <a href="projects.html" class="text-link" data-en="See all" data-de="Alle ansehen">See all</a>
         </div>
 
         <div class="project-grid">
@@ -118,40 +174,49 @@
             <img src="./assets/dashboard.png" alt="Stroke Risk Analytics Dashboard" class="project-img" />
             <div class="project-content">
               <p class="project-label">Power BI • Dashboarding</p>
-              <h3>Stroke Risk Analytics Dashboard</h3>
-              <p>
+              <h3 data-en="Stroke Risk Analytics Dashboard" data-de="Stroke Risk Analytics Dashboard">Stroke Risk Analytics Dashboard</h3>
+              <p
+                data-en="Interactive Power BI dashboard built for KPI visibility, demographic breakdowns and risk-based insight delivery using healthcare data."
+                data-de="Interaktives Power-BI-Dashboard für KPI-Transparenz, demografische Auswertungen und risikobasierte Erkenntnisse auf Basis von Gesundheitsdaten."
+              >
                 Interactive Power BI dashboard built for KPI visibility, demographic breakdowns and risk-based insight delivery using healthcare data.
               </p>
               <div class="project-actions">
-                <a href="projects.html" class="project-btn">View Details</a>
+                <a href="projects.html" class="project-btn" data-en="View Details" data-de="Details ansehen">View Details</a>
               </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-placeholder">Preview coming soon</div>
+            <div class="project-placeholder" data-en="Preview coming soon" data-de="Vorschau folgt">Preview coming soon</div>
             <div class="project-content">
               <p class="project-label">Python • Forecasting • ML</p>
-              <h3>Smart Electricity and Energy Optimizer</h3>
-              <p>
+              <h3 data-en="Smart Electricity and Energy Optimizer" data-de="Smart Electricity and Energy Optimizer">Smart Electricity and Energy Optimizer</h3>
+              <p
+                data-en="End to end energy analytics pipeline with forecasting, anomaly detection and explainable usage insights for cost-aware decision making."
+                data-de="End-to-End-Energieanalyse-Pipeline mit Forecasting, Anomalieerkennung und erklärbaren Nutzungseinblicken für kostenbewusste Entscheidungen."
+              >
                 End to end energy analytics pipeline with forecasting, anomaly detection and explainable usage insights for cost-aware decision making.
               </p>
               <div class="project-actions">
-                <a href="projects.html" class="project-btn">View Details</a>
+                <a href="projects.html" class="project-btn" data-en="View Details" data-de="Details ansehen">View Details</a>
               </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-placeholder">Preview coming soon</div>
+            <div class="project-placeholder" data-en="Preview coming soon" data-de="Vorschau folgt">Preview coming soon</div>
             <div class="project-content">
               <p class="project-label">Streamlit • Environmental Analytics</p>
-              <h3>Lake Monitoring and Quality Analysis</h3>
-              <p>
+              <h3 data-en="Lake Monitoring and Quality Analysis" data-de="Lake Monitoring and Quality Analysis">Lake Monitoring and Quality Analysis</h3>
+              <p
+                data-en="Predictive monitoring workflow for lake levels, trophic states and water quality metrics using environmental and meteorological datasets."
+                data-de="Prädiktiver Monitoring-Workflow für Seespiegel, trophische Zustände und Wasserqualitätsmetriken auf Basis von Umwelt- und Wetterdaten."
+              >
                 Predictive monitoring workflow for lake levels, trophic states and water quality metrics using environmental and meteorological datasets.
               </p>
               <div class="project-actions">
-                <a href="projects.html" class="project-btn">View Details</a>
+                <a href="projects.html" class="project-btn" data-en="View Details" data-de="Details ansehen">View Details</a>
               </div>
             </div>
           </article>
@@ -162,7 +227,7 @@
     <section id="skills" class="section alt-bg">
       <div class="container">
         <p class="section-tag">// SKILLS</p>
-        <h2>Skill Levels</h2>
+        <h2 data-en="Skill Levels" data-de="Kenntnisse">Skill Levels</h2>
 
         <div class="skill-level-grid">
           <div class="skill-level-card">
@@ -171,7 +236,7 @@
             <div class="skill-item">
               <div class="skill-head">
                 <span>Python</span>
-                <span>Advanced</span>
+                <span data-en="Advanced" data-de="Fortgeschritten">Advanced</span>
               </div>
               <div class="skill-track"><div class="skill-fill" style="width: 90%"></div></div>
             </div>
@@ -179,7 +244,7 @@
             <div class="skill-item">
               <div class="skill-head">
                 <span>SQL</span>
-                <span>Advanced</span>
+                <span data-en="Advanced" data-de="Fortgeschritten">Advanced</span>
               </div>
               <div class="skill-track"><div class="skill-fill" style="width: 92%"></div></div>
             </div>
@@ -187,25 +252,9 @@
             <div class="skill-item">
               <div class="skill-head">
                 <span>ETL / ELT</span>
-                <span>Advanced</span>
+                <span data-en="Advanced" data-de="Fortgeschritten">Advanced</span>
               </div>
               <div class="skill-track"><div class="skill-fill" style="width: 90%"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-head">
-                <span>Data Validation</span>
-                <span>Strong</span>
-              </div>
-              <div class="skill-track"><div class="skill-fill" style="width: 85%"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-head">
-                <span>CI/CD</span>
-                <span>Strong</span>
-              </div>
-              <div class="skill-track"><div class="skill-fill" style="width: 80%"></div></div>
             </div>
           </div>
 
@@ -215,7 +264,7 @@
             <div class="skill-item">
               <div class="skill-head">
                 <span>Azure Data Factory</span>
-                <span>Strong</span>
+                <span data-en="Strong" data-de="Stark">Strong</span>
               </div>
               <div class="skill-track"><div class="skill-fill fill-orange" style="width: 85%"></div></div>
             </div>
@@ -223,33 +272,17 @@
             <div class="skill-item">
               <div class="skill-head">
                 <span>Power BI</span>
-                <span>Strong</span>
+                <span data-en="Strong" data-de="Stark">Strong</span>
               </div>
               <div class="skill-track"><div class="skill-fill fill-orange" style="width: 88%"></div></div>
             </div>
 
             <div class="skill-item">
               <div class="skill-head">
-                <span>BigQuery</span>
-                <span>Working</span>
-              </div>
-              <div class="skill-track"><div class="skill-fill fill-orange" style="width: 72%"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-head">
-                <span>Spark / PySpark</span>
-                <span>Working</span>
+                <span>Spark / BigQuery</span>
+                <span data-en="Working" data-de="Praxiskenntnisse">Working</span>
               </div>
               <div class="skill-track"><div class="skill-fill fill-orange" style="width: 74%"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-head">
-                <span>dbt / Kafka</span>
-                <span>Working</span>
-              </div>
-              <div class="skill-track"><div class="skill-fill fill-orange" style="width: 70%"></div></div>
             </div>
           </div>
 
@@ -259,7 +292,7 @@
             <div class="skill-item">
               <div class="skill-head">
                 <span>English</span>
-                <span>Fluent</span>
+                <span data-en="Fluent" data-de="Fließend">Fluent</span>
               </div>
               <div class="skill-track"><div class="skill-fill fill-green" style="width: 95%"></div></div>
             </div>
@@ -267,7 +300,7 @@
             <div class="skill-item">
               <div class="skill-head">
                 <span>German</span>
-                <span>Intermediate</span>
+                <span data-en="Intermediate" data-de="Mittelstufe">Intermediate</span>
               </div>
               <div class="skill-track"><div class="skill-fill fill-green" style="width: 65%"></div></div>
             </div>
@@ -275,7 +308,7 @@
             <div class="skill-item">
               <div class="skill-head">
                 <span>Hindi</span>
-                <span>Native</span>
+                <span data-en="Native" data-de="Muttersprache">Native</span>
               </div>
               <div class="skill-track"><div class="skill-fill fill-green" style="width: 98%"></div></div>
             </div>
@@ -284,11 +317,44 @@
       </div>
     </section>
 
+    <section id="strengths" class="section">
+      <div class="container">
+        <p class="section-tag">// VALUE</p>
+        <h2 data-en="What I Bring" data-de="Was ich mitbringe">What I Bring</h2>
+
+        <div class="strength-grid">
+          <div class="strength-card">
+            <h3 data-en="Data Engineering Strength" data-de="Stärke im Data Engineering">Data Engineering Strength</h3>
+            <p
+              data-en="I build structured and scalable ETL and ELT workflows that improve data reliability, reduce manual effort and support decision-ready reporting. My strength is turning messy operational data into maintainable pipelines and usable outputs."
+              data-de="Ich entwickle strukturierte und skalierbare ETL- und ELT-Workflows, die Datenqualität verbessern, manuellen Aufwand reduzieren und entscheidungsrelevantes Reporting ermöglichen. Meine Stärke liegt darin, unstrukturierte operative Daten in wartbare Pipelines und nutzbare Ergebnisse zu überführen."
+            >
+              I build structured and scalable ETL and ELT workflows that improve data reliability, reduce manual effort and support decision-ready reporting. My strength is turning messy operational data into maintainable pipelines and usable outputs.
+            </p>
+          </div>
+
+          <div class="strength-card">
+            <h3 data-en="Analytics and BI Strength" data-de="Stärke in Analytics und BI">Analytics and BI Strength</h3>
+            <p
+              data-en="I translate business and operational needs into clear dashboards, KPIs and analytical views that help stakeholders act faster and with more confidence. My strength is connecting data engineering with practical business interpretation."
+              data-de="Ich übersetze fachliche und operative Anforderungen in klare Dashboards, KPIs und analytische Sichten, die Stakeholdern schnellere und fundiertere Entscheidungen ermöglichen. Meine Stärke ist die Verbindung von Data Engineering mit praxisnaher Business-Interpretation."
+            >
+              I translate business and operational needs into clear dashboards, KPIs and analytical views that help stakeholders act faster and with more confidence. My strength is connecting data engineering with practical business interpretation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="section">
       <div class="container contact-box">
         <p class="section-tag">// CONTACT</p>
-        <h2>Get in Touch</h2>
-        <p class="section-text">
+        <h2 data-en="Get in Touch" data-de="Kontakt">Get in Touch</h2>
+        <p
+          class="section-text"
+          data-en="Open to opportunities in Data Engineering, Analytics Engineering, BI and Reporting across Germany and Europe."
+          data-de="Offen für Möglichkeiten in Data Engineering, Analytics Engineering, BI und Reporting in Deutschland und Europa."
+        >
           Open to opportunities in Data Engineering, Analytics Engineering, BI and Reporting across Germany and Europe.
         </p>
         <div class="contact-links">
