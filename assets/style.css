@@ -381,11 +381,6 @@ h3 {
   font-size: 0.9rem;
 }
 
-.featured-project-block,
-.other-projects-block {
-  margin-top: 36px;
-}
-
 .featured-project-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
