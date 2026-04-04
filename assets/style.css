@@ -72,6 +72,38 @@ a {
   gap: 18px;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9ab4d6;
+  font-size: 0.92rem;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: #9ab4d6;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.92rem;
+}
+
+.lang-btn.active {
+  color: #ffffff;
+}
+
+.lang-btn:hover {
+  color: #22e39d;
+}
+
 .logo {
   font-size: 1.2rem;
   font-weight: 700;
@@ -254,7 +286,8 @@ h2 {
   margin-top: 20px;
 }
 
-.timeline-card ul {
+.timeline-card ul,
+.project-detail-card ul {
   margin-top: 14px;
   padding-left: 20px;
   color: #c7d6ee;
@@ -406,6 +439,35 @@ h2 {
   box-shadow: 0 0 12px rgba(34, 227, 157, 0.35);
 }
 
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.strength-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(130, 170, 255, 0.14);
+  border-radius: 18px;
+  padding: 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.strength-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(41, 180, 255, 0.12);
+}
+
+.strength-card h3 {
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.strength-card p {
+  color: #a8bedc;
+}
+
 .footer {
   padding: 28px 0 34px;
   text-align: center;
@@ -417,11 +479,18 @@ h2 {
   .hero-grid,
   .project-grid,
   .stats,
-  .skill-level-grid {
+  .skill-level-grid,
+  .strength-grid {
     grid-template-columns: 1fr;
   }
 
   .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-right {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
   }
