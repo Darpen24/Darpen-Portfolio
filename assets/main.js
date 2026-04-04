@@ -199,10 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.documentElement.lang = lang;
-    document.title =
-      lang === "de"
-        ? "Darpen Bhandari | Data Engineer Portfolio"
-        : "Darpen Bhandari | Data Engineer Portfolio";
+    document.title = "Darpen Bhandari | Data Engineer Portfolio";
   }
 
   function setActiveLanguageButton(lang) {
