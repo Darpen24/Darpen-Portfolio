@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_btn_resume: "Resume",
 
       stat_experience: "Years Experience",
-      stat_apps: "Applications Supported",
-      stat_reporting: "Reporting Effort Reduced",
+      stat_apps: "Enterprise Data Workflows",
+      stat_reporting: "Less Manual Reporting",
 
       about_title: "Who I Am",
       about_text:
@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_btn_resume: "Lebenslauf",
 
       stat_experience: "Jahre Erfahrung",
-      stat_apps: "Unterstützte Anwendungen",
-      stat_reporting: "Weniger Reporting-Aufwand",
+      stat_apps: "Enterprise-Datenworkflows",
+      stat_reporting: "Weniger manueller Reporting-Aufwand",
 
       about_title: "Wer ich bin",
       about_text:
