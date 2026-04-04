@@ -4,16 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Darpen Bhandari</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
   <header class="navbar">
     <div class="container nav-wrap">
       <a href="index.html" class="logo">Darpen Bhandari</a>
-      <nav>
+
+      <nav class="nav-right">
+        <div class="lang-toggle">
+          <button id="lang-en" class="lang-btn active">EN</button>
+          <span>|</span>
+          <button id="lang-de" class="lang-btn">DE</button>
+        </div>
+
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html" data-en="Home" data-de="Start">Home</a></li>
+          <li><a href="projects.html" data-en="Projects" data-de="Projekte">Projects</a></li>
         </ul>
       </nav>
     </div>
@@ -22,38 +29,91 @@
   <main class="section">
     <div class="container">
       <p class="section-tag">// PROJECTS</p>
-      <h1>All Projects</h1>
-      <p class="section-text">A growing collection of dashboards, analytics workflows and data-focused projects.</p>
+      <h1 data-en="All Projects" data-de="Alle Projekte">All Projects</h1>
+      <p
+        class="section-text"
+        data-en="A growing collection of dashboards, analytics workflows and data-focused projects built across business intelligence, forecasting and scalable data processing."
+        data-de="Eine wachsende Sammlung von Dashboards, Analytics-Workflows und datenorientierten Projekten aus Business Intelligence, Forecasting und skalierbarer Datenverarbeitung."
+      >
+        A growing collection of dashboards, analytics workflows and data-focused projects built across business intelligence, forecasting and scalable data processing.
+      </p>
 
       <div class="project-grid">
         <article class="project-card">
-          <img src="assets/dashboard.png" alt="Dashboard project" class="project-img" />
+          <img src="./assets/dashboard.png" alt="Stroke Risk Analytics Dashboard" class="project-img" />
           <div class="project-content">
             <p class="project-label">Power BI • Dashboarding</p>
-            <h3>Interactive Dashboard Project</h3>
-            <p>Reporting-focused dashboard work with KPIs, visuals and operational decision support.</p>
+            <h3 data-en="Stroke Risk Analytics Dashboard" data-de="Stroke Risk Analytics Dashboard">Stroke Risk Analytics Dashboard</h3>
+            <p
+              data-en="Interactive dashboard for KPI visibility, demographic analysis, filtering and risk-focused insight generation using healthcare data."
+              data-de="Interaktives Dashboard für KPI-Transparenz, demografische Analysen, Filterung und risikobasierte Erkenntnisse auf Basis von Gesundheitsdaten."
+            >
+              Interactive dashboard for KPI visibility, demographic analysis, filtering and risk-focused insight generation using healthcare data.
+            </p>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-placeholder">Project Image Coming Later</div>
+          <div class="project-placeholder" data-en="Preview coming soon" data-de="Vorschau folgt">Preview coming soon</div>
           <div class="project-content">
-            <p class="project-label">Python • Forecasting</p>
-            <h3>Smart Electricity and Energy Optimizer</h3>
-            <p>Forecasting, anomaly detection and cost-aware energy analytics.</p>
+            <p class="project-label">Python • Forecasting • ML</p>
+            <h3 data-en="Smart Electricity and Energy Optimizer" data-de="Smart Electricity and Energy Optimizer">Smart Electricity and Energy Optimizer</h3>
+            <p
+              data-en="End to end energy analytics workflow combining forecasting, anomaly detection and explainable usage recommendations for smarter energy decisions."
+              data-de="End-to-End-Energieanalyse-Workflow mit Forecasting, Anomalieerkennung und erklärbaren Nutzungsempfehlungen für smartere Energieentscheidungen."
+            >
+              End to end energy analytics workflow combining forecasting, anomaly detection and explainable usage recommendations for smarter energy decisions.
+            </p>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-placeholder">Project Image Coming Later</div>
+          <div class="project-placeholder" data-en="Preview coming soon" data-de="Vorschau folgt">Preview coming soon</div>
           <div class="project-content">
             <p class="project-label">Environmental Analytics</p>
-            <h3>Lake Monitoring and Quality Analysis</h3>
-            <p>Lake level monitoring, KPI tracking and environmental dashboarding.</p>
+            <h3 data-en="Lake Monitoring and Quality Analysis" data-de="Lake Monitoring and Quality Analysis">Lake Monitoring and Quality Analysis</h3>
+            <p
+              data-en="Predictive monitoring and KPI reporting solution for lake levels, trophic states and water quality patterns using environmental datasets."
+              data-de="Prädiktive Monitoring- und KPI-Reporting-Lösung für Seespiegel, trophische Zustände und Wasserqualitätsmuster auf Basis von Umweltdaten."
+            >
+              Predictive monitoring and KPI reporting solution for lake levels, trophic states and water quality patterns using environmental datasets.
+            </p>
           </div>
         </article>
       </div>
+
+      <div class="timeline-card project-detail-card">
+        <h2 data-en="Project Highlights" data-de="Projekt-Highlights">Project Highlights</h2>
+        <ul>
+          <li
+            data-en="Stroke Risk Analytics Dashboard: Built to improve reporting clarity through KPI cards, filters and visual summaries that support faster interpretation of healthcare-related data."
+            data-de="Stroke Risk Analytics Dashboard: Entwickelt zur Verbesserung der Reporting-Klarheit durch KPI-Karten, Filter und visuelle Zusammenfassungen für eine schnellere Interpretation gesundheitsbezogener Daten."
+          >
+            <strong>Stroke Risk Analytics Dashboard:</strong> Built to improve reporting clarity through KPI cards, filters and visual summaries that support faster interpretation of healthcare-related data.
+          </li>
+          <li
+            data-en="Smart Electricity and Energy Optimizer: Developed as a thesis project to combine energy analytics, forecasting, anomaly detection and explainable outputs for practical cost and usage optimization."
+            data-de="Smart Electricity and Energy Optimizer: Als Thesis-Projekt entwickelt, um Energieanalysen, Forecasting, Anomalieerkennung und erklärbare Ausgaben für praktische Kosten- und Nutzungsoptimierung zu verbinden."
+          >
+            <strong>Smart Electricity and Energy Optimizer:</strong> Developed as a thesis project to combine energy analytics, forecasting, anomaly detection and explainable outputs for practical cost and usage optimization.
+          </li>
+          <li
+            data-en="Lake Monitoring and Quality Analysis: Created to integrate meteorological and environmental data into reusable analytics workflows for environmental KPI monitoring and predictive reporting."
+            data-de="Lake Monitoring and Quality Analysis: Entwickelt zur Integration meteorologischer und umweltbezogener Daten in wiederverwendbare Analytics-Workflows für Umwelt-KPI-Monitoring und prädiktives Reporting."
+          >
+            <strong>Lake Monitoring and Quality Analysis:</strong> Created to integrate meteorological and environmental data into reusable analytics workflows for environmental KPI monitoring and predictive reporting.
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Darpen Bhandari</p>
+    </div>
+  </footer>
+
+  <script src="./assets/main.js"></script>
 </body>
 </html>
