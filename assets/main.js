@@ -30,7 +30,7 @@ function updateLanguage(lang) {
   elements.forEach((el) => {
     const newText = el.getAttribute(`data-${lang}`);
     if (newText !== null) {
-      el.textContent = newText;
+      el.innerHTML = newText;
     }
   });
 
