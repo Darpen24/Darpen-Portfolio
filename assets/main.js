@@ -37,13 +37,8 @@ function updateLanguage(lang) {
   const enBtn = document.getElementById("lang-en");
   const deBtn = document.getElementById("lang-de");
 
-  if (enBtn) {
-    enBtn.classList.toggle("active", lang === "en");
-  }
-
-  if (deBtn) {
-    deBtn.classList.toggle("active", lang === "de");
-  }
+  if (enBtn) enBtn.classList.toggle("active", lang === "en");
+  if (deBtn) deBtn.classList.toggle("active", lang === "de");
 
   resetTyping();
 }
@@ -51,9 +46,7 @@ function updateLanguage(lang) {
 function resetTyping() {
   if (!typingTarget) return;
 
-  if (typingTimeout) {
-    clearTimeout(typingTimeout);
-  }
+  if (typingTimeout) clearTimeout(typingTimeout);
 
   roleIndex = 0;
   charIndex = 0;
