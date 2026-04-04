@@ -90,7 +90,17 @@ let charIndex = 0;
 let deleting = false;
 let typingTimeout = null;
 
-function applyTranslations(lang) {
+function applyDataEnDeTranslations(lang) {
+  const elements = document.querySelectorAll("[data-en][data-de]");
+  elements.forEach((el) => {
+    const newText = el.getAttribute(`data-${lang}`);
+    if (newText !== null) {
+      el.textContent = newText;
+    }
+  });
+}
+
+function applyDataI18nTranslations(lang) {
   const elements = document.querySelectorAll("[data-i18n]");
   elements.forEach((el) => {
     const key = el.getAttribute("data-i18n");
@@ -105,7 +115,8 @@ function updateLanguage(lang) {
   localStorage.setItem("portfolioLang", lang);
   document.documentElement.lang = lang;
 
-  applyTranslations(lang);
+  applyDataEnDeTranslations(lang);
+  applyDataI18nTranslations(lang);
 
   const enBtn = document.getElementById("lang-en");
   const deBtn = document.getElementById("lang-de");
